@@ -27,7 +27,7 @@ app.post("/users", (request, response) => {
    const { name, age } = request.body
    const user = { id:v4(), name, age }
    users.push(user)
-   return response.status(201).json(users)
+   return response.status(201).json(user)
 })
 
 app.put('/users/:id',checkUserId, (request, response) => {
